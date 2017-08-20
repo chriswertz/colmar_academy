@@ -262,12 +262,17 @@ section.three .tiletextbox {
 
 section.three .tiles {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   background-color: white;
 }
 
 section.three .tiles .tilegroup {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   margin: 0 1rem;
 }
 
@@ -289,7 +294,12 @@ section.three .tiletextbox p {
 
 section.three .tiles .tilegroup .tile .tileimagebox {
   box-sizing: border-box;
-  width: 33%;
+  width: auto;
+}
+
+section.three .tiles .tilegroup .tile .tileimagebox img {
+  width: 100%;
+  height: auto;
 }
 
 /* Section Four */
