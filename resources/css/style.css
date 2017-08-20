@@ -295,6 +295,7 @@ section.three .tiles .tilegroup .tile .tileimagebox {
 /* Section Four */
 section.four {
   display: flex;
+  flex-direction: column;
 }
 
 section.two {
@@ -309,6 +310,10 @@ section.four .left .videobox {
   padding: 32px 20px 32px 24px;
   width: 100%;
   height: auto;
+}
+
+section.four video {
+  width: 100%;
 }
 
 section.four h2 {
