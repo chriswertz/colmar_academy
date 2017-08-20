@@ -105,6 +105,11 @@ ul li {
   text-align: center;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+}
+
 /* Top Section */
 section.top {
   display: flex;
@@ -208,6 +213,10 @@ section.two .right .row {
   padding: 32px 16px 16px 16px;
 }
 
+section.two .right .row .imagebox {
+  max-width: 35%;
+}
+
 section.two .right .row .imagebox img {
   width: 100%;
   height: auto;
@@ -247,11 +256,27 @@ section.three .tiletextbox {
   padding: 16px 16px 24px 16px;
 }
 
-section.three .tilegroup {
+section.three .tiles .tilegroup {
   display: flex;
 }
 
-section.three .tile {
+section.three .tiles .tilegroup .tile {
+  box-sizing: border-box;
   padding: 32px;
+  width: 33%;
+}
+
+section.three h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 16px 0 8px 0;
+}
+
+section.three .tiletextbox p {
+  padding: 8px 0;
+}
+
+section.three .tiles .tilegroup .tile .tileimagebox {
+  box-sizing: border-box;
   width: 33%;
 }
