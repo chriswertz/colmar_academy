@@ -201,18 +201,18 @@ section.two .right .mobile {
 
 section.two .right .row {
   display: flex;
+  flex-direction: row;
   border-bottom: 0.75px solid lightgray;
   border-left: 0.75px solid lightgray;
   padding: 32px 16px 16px 16px;
 }
 
 section.two .right .row .imagebox {
-  width: 35%;
+
 }
 
 section.two .right .row .imagebox img {
-  width: 100%;
-  height: auto;
+
 }
 
 section.two .right .row .imagebox .mobile {
@@ -256,6 +256,7 @@ section.three h1 {
 }
 
 section.three .tiletextbox {
+  min-height: 9rem;
   background-color: white;
   padding: 16px 16px 24px 16px;
 }
@@ -530,6 +531,10 @@ footer ul li {
 
   section.three .tiles .tilegroup {
     padding: 16px 16px 32px 16px;
+  }
+
+  section.three .tiletextbox {
+    min-height: 0;
   }
 
   /* Section Four Mobile */
